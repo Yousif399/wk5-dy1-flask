@@ -1,0 +1,19 @@
+{% include 'index.html' %}
+{% block content %}
+<h1 class="d-flex justify-content-center ">THIS IS MY ORIGINAL FAV 5 PAGE :) </h1>
+<div class="container">
+    {% for i in artist_list %}
+    <hr>
+    <div class="col-12" style="font-size: 35px;">
+        <p class="d-flex justify-content-center">{{i.title()}}</p>
+    </div>
+    
+    {% endfor %}
+    {% for i in sport %}
+    <hr>
+    <div class="col-12 " style="font-size: 35px; text-align: center;">
+        <p>{{i.title()}}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
